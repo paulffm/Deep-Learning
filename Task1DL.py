@@ -2,15 +2,11 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Neural Network with sigmoid as activation function and squared loss
-# with backward propagation
 
-#random parameters for Wx+b with x as input and y as output
+
+
 def initialize(input_dim, hidden1_dim, hidden2_dim, output_dim, batch_size):
 
-    # X first row X1 and 5 entries -> 5 batches
-    # W1 (4x3) * X (3x5)(=4x5) +(b1) = y1 (4x5)
-    # W2 (4x4) * y1 (4x5) + b2
-    # W3 (2x4) * y2 + b3
     # rows = neurons, columns = inputs
     # W1 connecting input units and units for the first hidden layer
     # W1 (1,1) = weight for input x1 for neuron h_1(1)
@@ -34,19 +30,12 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 def deriv_sigmoid(x):
-    #####################################
-    #   Computing derivative of sigmoid
-    #
 
-    #   Your code here
-
-    #####################################
-    #return np.zeros_like(x)
     return np.exp(-x) / ((1+np.exp(-x))**2)
 
 def forward(parameters, X):
-    W1, b1, W2, b2, W3, b3 = parameters
 
+    W1, b1, W2, b2, W3, b3 = parameters
     batch_size = X.shape[1]
     hidden1_dim = W1.shape[0]
     hidden2_dim = W2.shape[0]
@@ -78,27 +67,15 @@ def squared_loss(predictions, targets):
     """
 
     loss = np.zeros(targets.shape[1])
-
-    #####################
-    #
-    #   Your code here
-    # prediction size 2x5 (output 2 and 5 instances)
     # sum over columns I -> loss size = 1x5, then average over these 5 batches
     loss = np.sum(0.5 * (predictions - targets)**2, axis=0)
-    #size 1x1->0x0
     return np.mean(loss)
 
 def deriv_squared_loss(predictions, targets):
+
     batch_size = targets.shape[1]
-
     dloss = np.zeros(targets.shape)
-
-    #####################
-    #
-    #   Your code here
-    # derivative of loss->correct df/dx 1/2n * (x-y)^2 = 1/n * (x-y)
     dloss = (predictions - targets) / batch_size
-    #####################h
 
     return dloss
 
@@ -121,28 +98,19 @@ def backward(activations, targets, parameters):
     dW3 = np.zeros((output_dim, hidden2_dim))
     db3 = np.zeros((output_dim,))
 
-    ##############################
-    #   Computing the gradients
     delta = deriv_squared_loss(predictions, targets)
 
-    #delta (2x5) * hid (4x5) ->transpose
     dW3 = np.dot(delta, hid_2.T)
     #sum over batches
     db3 = np.sum(delta, axis=1)
-
     delta = np.dot(W3.T, delta) * deriv_sigmoid(z2)
-
     dW2 = np.dot(delta, hid_1.T)
     db2 = np.sum(delta, axis=1)
-
     delta = np.dot(W2.T, delta) * deriv_sigmoid(z1)
-
     dW1 = np.dot(delta, X.T)
     db1 = np.sum(delta, axis=1)
 
-
     grads = [dW1, db1, dW2, db2, dW3, db3]
-
     return grads
 
 def convert_to_1d_vector(parameters):
