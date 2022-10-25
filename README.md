@@ -5,3 +5,8 @@
 - NN as class from scratch, classification of digits with stochastic gradient descent, evaluating analytical and numerical gradients
 ## Task3
 - NN with pytorch, forward and loss from scratch
+## Task4
+- FF Pytorch NN from scratch
+## Task5
+- RNN from scratch
+
