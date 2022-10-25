@@ -9,4 +9,5 @@
 - FF Pytorch NN from scratch
 ## Task5
 - RNN from scratch
-
+## Task6
+- AE and VAE from scratch
