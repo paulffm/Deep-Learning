@@ -1,4 +1,4 @@
-# Deep-Learning Model implemented from Scratch using Numpy
+# Deep-Learning Model from Scratch using Numpy
 ## Task1
 - Neural Network using sigmoid activation and squared loss from scratch and a comparison between analytical and numerical gradients in the backpropagation
 ## Task2
