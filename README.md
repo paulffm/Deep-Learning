@@ -1,13 +1,34 @@
 # Deep-Learning Models from Scratch using Numpy
+
+<p align="center">
+  <img src="nn.jpg"  alt="frontend" width="960px" height="672px">
+</p>
+
+## Overview
+
+This project is part of the course "Deep Learning: Architectures & Methods" offered by the Artificial Intelligence and Machine Learning Lab at TU Darmstadt. The repository includes implementations of deep learning models such as feedforward neural networks, recurrent neural networks, autoencoders, and variational autoencoders from scratch using NumPy or PyTorch.
+
 ## Task1
-- Neural Network using sigmoid activation and squared loss from scratch and a comparison between analytical and numerical gradients in the backpropagation
+
+- Neural Network using sigmoid activation and squared loss from scratch using NumPy
+- Comparison between analytical and numerical gradient computations in the backpropagation
+  
 ## Task2
-- NN as class from scratch, classification of digits with stochastic gradient descent, evaluating analytical and numerical gradients
+
+- Neural network from scratch with NumPy, classification of digits with stochastic gradient descent, evaluating analytical and numerical gradients
+  
 ## Task3
-- NN with pytorch, forward and loss from scratch
+
+- Neural networks with PyTorch, forward and loss from scratch
+  
 ## Task4
-- FF Pytorch NN from scratch
+
+- Feedforward neural networks from scratch using PyTorch
+- 
 ## Task5
-- RNN from scratch
+
+- Recurrent neural networks from scratch using PyTorch
+  
 ## Task6
-- AE and VAE from scratch
+
+- Autoencoder and Variational Autoencoder from scratch using PyTorch
