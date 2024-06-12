@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project is part of the course "Deep Learning: Architectures & Methods" offered by the Artificial Intelligence and Machine Learning Lab at TU Darmstadt. The repository includes implementations of deep learning models such as feedforward neural networks, recurrent neural networks, autoencoders, and variational autoencoders from scratch using NumPy or PyTorch.
+This project is part of the course "Deep Learning: Architectures & Methods" offered by the Artificial Intelligence and Machine Learning Lab at TU Darmstadt. The repository includes implementations of deep learning models such as feedforward neural networks, recurrent neural networks, autoencoders, and variational autoencoders from scratch using NumPy or PyTorch. In addition, it contains analytical gradient computations in the backpropagation.
 
 ## Task1
 
@@ -15,7 +15,8 @@ This project is part of the course "Deep Learning: Architectures & Methods" offe
   
 ## Task2
 
-- Neural network from scratch with NumPy, classification of digits with stochastic gradient descent, evaluating analytical and numerical gradients
+- Neural network from scratch with NumPy, classification of digits with stochastic gradient descent,
+- Comparison between analytical and numerical gradient computations in the backpropagation
   
 ## Task3
 
@@ -24,7 +25,7 @@ This project is part of the course "Deep Learning: Architectures & Methods" offe
 ## Task4
 
 - Feedforward neural networks from scratch using PyTorch
-- 
+  
 ## Task5
 
 - Recurrent neural networks from scratch using PyTorch
