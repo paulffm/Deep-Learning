@@ -1,7 +1,7 @@
 # Deep-Learning Models from Scratch using Numpy
 
 <p align="center">
-  <img src="nn.jpg"  alt="frontend" width="960px" height="672px">
+  <img src="nn.jpg"  alt="nn" width="800px" height="560px">
 </p>
 
 ## Overview
